@@ -4,7 +4,7 @@ const Article = require("./models/article");
 const articleRouter = require("./routes/articles");
 const methodOverride = require("method-override");
 const dotenv = require("dotenv");
-
+const port = process.env.PORT || 3000;
 dotenv.config();
 const app = express();
 app.engine('ejs', require('ejs').__express);
@@ -25,4 +25,4 @@ app.get("/", async (req, res) => {
 
 app.use("/articles", articleRouter);
 
-app.listen(5000);
+app.listen(port);
