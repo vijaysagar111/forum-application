@@ -4,9 +4,10 @@ const Article = require("./models/article");
 const articleRouter = require("./routes/articles");
 const methodOverride = require("method-override");
 const dotenv = require("dotenv");
+
 dotenv.config();
 const app = express();
-
+app.engine('ejs', require('ejs').__express);
 mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,

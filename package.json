@@ -1,14 +1,8 @@
 {
-  "name": "form application",
+  "name": "forum-application",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "devStart": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "dompurify": "^2.2.3",
     "dotenv": "^8.2.0",
@@ -17,10 +11,23 @@
     "jsdom": "^16.4.0",
     "marked": "^1.2.6",
     "method-override": "^3.0.0",
-    "mongoose": "^5.11.7",
+    "mongoose": "^5.11.6",
     "slugify": "^1.4.6"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijaysagar111/forum-application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vijaysagar111/forum-application/issues"
+  },
+  "homepage": "https://github.com/vijaysagar111/forum-application#readme"
 }
